@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; 
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333; 
+            color: white; 
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #000; 
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            margin: 10px; 
+            cursor: pointer; /* Show a pointer cursor for clickable images */
+        }
+        p {
+            font-size: 18px; 
+        }
+    </style>
+    <script>
+        // Function to open the Gmail application
+        function openGmail() {
+            const email = "hamisip485@gmail.com";
+            const emailSubject = "Your Subject Here"; // Customize the subject
+            const emailBody = "Your message here."; // Customize the message
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Contact Information</h1>
+</header>
+
+<nav>
+    | <a href="INDEX.html" target="_blank">HOME</a> | 
+    <a href="PRODUCT.html" target="_blank">PRODUCT DESCRIPTION</a> | 
+    <a href="ENQUIRE.html" target="_blank">ORDER</a> | 
+    <a href="ABOUT.html" target="_blank">CONTACT US</a> |
+    <a href="FEEDBACK.html" target="_blank">FEEDBACK</a> |
+</nav>
+
+<section>
+    <img src="LOCATION.jpg" width="5%" height="5%" title="Location">
+    <p>@ Nairobi CBD along Mfangano Street opposite the KTDA Plaza</p>
+
+    <img src="PHONE.jpg" width="5%" height="5%" title="Phone">
+    <p>07 97 655 333 or 07 98 136 486</p>
+
+    <img src="MAIL.jpg" width="5%" height="5%" title="Mail" onclick="openGmail()">
+    <p>@ hamisip485@gmail.com or @hamisijersies@yahoo.net</p>
+
+    <img src="WEB.png" width="5%" height="5%" title="Web">
+    <p> @ WWW.HAMISIJERSIES.COM</p>
+</section>
+
+</body>
+</html>
